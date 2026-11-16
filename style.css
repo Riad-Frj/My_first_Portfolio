@@ -821,3 +821,217 @@ body {
 .skill-icon.css3 { color: #1572B6; }
 .skill-icon.tailwind { color: #38BDF8; }
 .skill-icon.javascript { color: #F7DF1E; }
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+/* Tablets and smaller laptops */
+@media (max-width: 900px) {
+
+    body {
+        padding: 0;
+    }
+
+    .header {
+        padding: 15px 4%;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar a {
+        margin-left: 8px;
+        font-size: 15px;
+    }
+
+    .home {
+        height: auto;
+        min-height: 100vh;
+        padding: 120px 5% 50px;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .home-content {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: clamp(32px, 6vw, 48px);
+    }
+
+    .home-content h3 {
+        font-size: 30px;
+    }
+
+    .home-sci {
+        padding: 0;
+        display: flex;
+        gap: 20px;
+    }
+
+    .home-sci a {
+        margin: 0;
+    }
+
+    .home-img {
+        width: min(80vw, 350px);
+        height: min(80vw, 350px);
+        margin: 0 auto;
+    }
+
+    .home-img .glowing-circle,
+    .home-img .glowing-circle::after {
+        width: 100%;
+        height: 100%;
+    }
+
+    .glowing-circle .image {
+        width: 92%;
+        height: 92%;
+    }
+
+    .about-section {
+        padding: 4rem 5%;
+        margin: 40px auto;
+    }
+
+    .about-section .role {
+        font-size: 30px;
+    }
+
+    .about-section .intro {
+        font-size: 19px;
+        line-height: 1.7;
+    }
+
+    .section-title .line {
+        width: 90%;
+    }
+
+    .contact {
+        padding: 6rem 5% 3rem;
+    }
+
+    .contact h2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+
+    .header {
+        padding: 12px 4%;
+        flex-direction: column;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .navbar {
+        gap: 5px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+        margin-left: 5px;
+    }
+
+    .home {
+        padding-top: 150px;
+        gap: 30px;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .home-content h3 {
+        font-size: 24px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .home-img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .about-section h2 {
+        font-size: 32px;
+    }
+
+    .about-section .role {
+        font-size: 25px;
+    }
+
+    .about-section .intro {
+        font-size: 16px;
+    }
+
+    .text-center h2 {
+        font-size: 2rem;
+    }
+
+    .text-center h4 {
+        font-size: 16px;
+    }
+
+    .Skills-item {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .skills-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact .informasi,
+    .contact .feedback {
+        min-width: 0;
+        width: 100%;
+    }
+
+    footer {
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+/* Prevent horizontal scrolling */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
